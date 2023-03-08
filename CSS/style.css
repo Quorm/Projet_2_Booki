@@ -1,0 +1,760 @@
+body {
+  font-family: "Raleway", sans-serif;
+  width: 100%;
+  max-width: 1440px;
+  margin: auto;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Section 1 Menu */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;   
+  width: 100%;
+  padding: 0 25px 0 30px;
+  margin: auto;
+}
+
+.navbar_img {
+  height: 19px;
+  width: 61px; 
+  margin-bottom: 5px;
+}
+
+.navbar_lien {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 320px;
+}
+
+.navbar_lien_texte {
+  height: 69px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  width: 150px;
+  right: 1%;
+}
+
+.navbar_lien_texte:hover {
+  cursor: pointer;
+  border-top: 2px solid #0065FC;
+  color: #0065FC;
+}
+
+/* Section 2 corps de page */
+/* Titre */
+.corps_texte {
+  margin: 50px 30px 0 30px; 
+}
+
+.corps_texte_titre {
+  font-size: 22px;
+  line-height: 26px;
+  margin-bottom: 0;
+}
+
+.corps_texte_soustitre {
+  margin-top: 15px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 17px;
+}
+
+/* Emplacement */
+.corps_emplacement {
+  display: flex;
+  margin: 20px 0 0 30px; 
+}
+
+.corps_emplacement_icône {
+  background-color: #F2F2F2;
+  height: 50px;
+  width: 50px;
+  text-align: center;
+  padding: 15px 16px 15px 16px;
+  border-radius: 15px 0 0 15px;
+}
+
+.corps_emplacement_ville {
+  border: 1px solid #F2F2F2;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 21px;
+  text-align: center;
+}
+
+::placeholder {
+  color: black;
+}
+
+.loupe {
+  visibility: hidden;
+}
+
+.corps_emplacement_bouton {
+  background-color: #0065FC;
+  width: 132px;
+  height: 50px;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0 15px 15px 0;
+  color: white;
+  font-weight: 700;
+  line-height: 21px;
+}
+
+.corps_emplacement_bouton:hover {
+  cursor: pointer;
+  color: #0065FC;
+  background-color: #DEEBFF;
+}
+
+/* Filtre */
+.corps_filtre {
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  height: 50px;
+  margin: 28px 30px 0 30px;
+}
+
+.corps_filtre_titre{
+  font-weight: 700;
+  font-size: 18px;
+  margin-right: 38px;
+}
+
+.corps_filtre_bloc {
+  display: flex;
+}
+
+.corps_filtre_bouton{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid #D9D9D9;
+  border-radius: 30px;
+  height: 45px;
+  margin-right: 38px;
+}
+
+.filtre_icon {
+  color: #0065FC;
+  width: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  margin-left: 18px;
+  margin-right: 5px;
+}
+
+.filtre_texte {
+  font-weight: 700;
+  font-size: 17px;
+  margin-right: 18px;
+}
+
+.corps_filtre_bouton:hover{
+  background-color: #DEEBFF;
+  cursor: pointer;
+  box-shadow: 1px 1px 0.2em;
+  transition: ease 0.6s;
+}
+
+/* Info */
+.corps_info {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 30px 0 30px 30px; 
+}
+
+.corps_info_icon {
+  font-size: 12px;
+  border-radius: 24px;
+  border: 1px solid #D9D9D9;
+  margin-right: 10px;
+  color: #0065FC;
+  width: 24px;
+  height: 24px;
+  padding: 5px 9px 17px 9px;
+}
+
+.corps_info_texte {
+  font-weight: 400;
+  font-size: 16px;
+  margin: 0;
+}
+
+/* Hébergement */
+.corps_article {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  padding-top: 5px;
+  margin: 0 30px 0 30px;
+}
+
+.corps_hébergement {
+  flex: 2;
+  height: 626px;
+  background-color: #F2F2F2;
+  margin-right: 30px;
+  border-radius: 15px;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.hébergement_titre {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 26px;
+  margin: 45px 0 25px 4.2%; 
+}
+
+.hébergement_bloc1 {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.hébergement_boite {
+  width: 28.5%;
+  background-color: white;
+  height: 199px;
+  border-radius: 20px;
+  margin-bottom: 28px;
+}
+
+.hébergement_boite:hover {
+  cursor: pointer;
+  box-shadow: 1px 3px 8px 1px black;
+  transition: ease 0.3s;
+}
+
+.hébergement_boite_img {
+  width: 100%;
+  height: 124px;
+  object-fit: cover;
+  border-radius: 20px 20px 0 0;
+  border: 5px solid white;
+}
+
+.hébergement_boite_titre {
+  font-weight: 700;
+  font-size: 16px;
+  margin: 0 5% 0 15px;
+  line-height: 19px;
+}
+
+.hébergement_boite_tarif {
+  font-weight: 400;
+  font-size: 14px;
+  margin: 5px 5% 5px 15px;
+}
+
+.hébergement_boite_note {
+  font-size: 11px;
+  margin: 0 0 0 15px;
+  display: inline-flex;
+  padding: 0;
+}
+
+.bleu {
+  color: #0065FC;
+}
+
+.gris {
+  color: #F2F2F2;
+}
+
+.hébergement_lien {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  margin-left: 4.2%;
+}
+
+/* Bloc Populaire */
+.corps_populaire {
+  flex: 1;
+  height: 626px;
+  background-color: #F2F2F2;
+  border-radius: 20px;
+}
+
+.corps_populaire_tête {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 45px 9% 25px 9%;
+}
+
+.populaire_titre {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 26px;
+  margin: 0;
+}
+
+.populaire_icône {
+  font-size: 20px;
+  color: #0065FC;
+}
+
+.populaire_boite {
+  width: 83%;
+  background-color: white;
+  margin: auto;
+  height: 144px;
+  border-radius: 20px;
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.populaire_boite:hover {
+  cursor: pointer;
+  box-shadow: 1px 3px 8px 1px black;
+  transition: ease 0.3s;
+}
+
+.populaire_boite_img {
+  width: 40%;
+  height: 144px;
+  object-fit: cover;
+  border-radius: 20px 0 0 20px;
+  border: 5px solid white;
+}
+
+.populaire_boite_texte {
+  margin-top: 18px;
+  width: 54%;
+}
+
+.marge, .marge1 {
+  margin-top: 40px;
+}
+
+.marge2 {
+  margin-top: 60px;
+}
+
+/* Activités à Marseille */
+.corps_activité {
+  width: 100%;
+  margin-top: 60px;
+}
+
+.activité_titre {
+  font-size: 22px;
+  line-height: 26px;
+  margin: 0 30px 22px 30px;
+}
+
+.activité_bloc {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 30px 0 30px;            
+}
+
+.activité_boite {
+  height: 445px;
+  width: 23%;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 1px 3px 8px #e2e2e2;
+}
+
+.activité_boite:hover {
+  cursor: pointer;
+  box-shadow: 1px 3px 8px 1px black;
+  transition: ease 0.3s;
+}
+
+.activité_boite_img {
+  width: 100%;
+  height: 390px;
+  object-fit: cover;
+  border-radius: 20px 20px 0 0;
+}
+
+.activité_boite_texte {
+  font-size: 16px;
+  font-weight: 700;
+  margin-left: 7%;
+  margin-right: 7%;
+}
+
+/* Section 3 pied de page */
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 225px;
+  background-color: #F2F2F2;
+  margin: 60px 30px 0 30px;
+}
+
+.footer_bloc {
+  width: 30%;
+  height: 162px;
+}
+
+.footer_bloc_titre{
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.footer_bloc_lien > a {
+  text-decoration: none;
+  color: black;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.footer_bloc_lien a:hover {
+  color: #0065FC;
+}
+
+/* Media Queries POUR TABLETTE */
+@media screen and (max-width: 1024px) {
+
+  /* Hébergement */
+  .corps_article {
+      display: block;
+  }
+  
+  .corps_hébergement {
+      width: 100%;
+  }
+  
+  .hébergement_titre {
+      margin-top: 0px;
+      padding-top: 45px;
+  }
+
+  .hébergement_boite_titre {
+      font-size: 16px;
+  }
+  
+  .hébergement_boite_tarif {
+      font-size: 14px;
+  }
+
+  /* Bloc Populaire */
+  .corps_populaire {
+      width: 100%;
+      height: 278px;
+      margin-top: 50px;
+  }
+
+  .populaire_bloc2 {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      flex-direction: row;
+  }
+  
+  .corps_populaire_tête {
+      padding-top: 45px;
+      width: 100%;
+      margin: 0;
+      margin-bottom: 25px;
+  }
+  
+  .populaire_titre {
+      margin-left: 4%;
+  }
+  
+  .populaire_icône {
+      margin-right: 4%;
+  }
+  
+  .populaire_boite {
+      width: 28.5%;
+      margin: 0;
+  }
+  
+  .populaire_boite_img {
+      width: 44%;
+  }
+  
+  .taille_titre, .taille_titre2 {
+      font-size: 14.5px;
+      font-weight: 700;
+      margin-left: 5%;
+  }
+
+  .taille_titre, .taille_tarif {
+      height: 38px;
+  }
+
+  .taille_tarif {
+      font-size: 13px;
+      font-weight: 400;
+      margin-left: 5%;
+  }
+
+  .marge, .marge1, .marge2 {
+      margin: 20px 0 0 5%;
+  }
+
+  /* Activités à Marseille */
+  .corps_activité {
+      width: 100%;
+      margin-top: 60px;
+  }
+
+  .activité_titre {
+      font-size: 22px;
+      line-height: 26px;
+      margin-bottom: 22px;
+  }
+
+  .activité_bloc {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  }
+
+  .activité_boite {
+      height: 267px;
+      width: 22%;
+  }
+
+  .activité_boite_img {
+      height: 211px;
+  }
+
+  .activité_boite_texte {
+      font-size: 16px;
+      font-weight: 700;
+      margin: 15px 7%;
+  }
+
+  .centrer1 {
+      margin-top: 5px;
+  }
+
+  /* Filtre */
+  .corps_filtre  {
+    height: 75px;
+    display: block;
+  }
+
+  .corps_filtre_bloc {
+      flex-direction: row;
+      flex-wrap: wrap;
+  }
+
+
+  .filtre_texte {
+      font-size: 16px;
+  }
+
+  .corps_filtre_titre {
+      margin: 0;
+  }
+
+  .corps_filtre_bouton {
+      margin-top: 10px;
+      margin-right: 20px;
+  }
+}
+       
+/* Media Queries POUR SMARTPHONE */
+@media screen and (max-width: 768px) {
+  /* Navbar */
+  .navbar {
+      display: block;
+      padding: 0;
+      padding-top: 20px;
+      width: 100%;
+  }
+
+  .navbar_lien {
+      width: 100%;
+      padding-top: 15px;
+  }
+
+  .navbar_image {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+
+  .navbar_lien_texte {
+      width: 50%;
+      align-items: center;
+      border-bottom: solid 3px #F2F2F2;
+  }
+
+  .navbar_lien_texte:hover { 
+      border: none;
+      border-bottom: solid 3px #0065FC;
+  }
+
+  /* Emplacement */
+  .corps_emplacement {
+      margin-right: 30px;
+  }
+
+  .corps_emplacement_ville {
+      width: 100%;
+      text-align: start;
+      padding-left: 15px;
+  }
+
+  .loupe {
+      visibility: visible;
+      background-color: #0065FC;
+      width: 50px;
+      height: 50px;
+      margin: 0;
+      border-radius: 15px;
+      color: white;
+      font-weight: 700;
+      text-align: center;
+      padding: 15px 16px 15px 16px;
+  }
+  
+  .corps_emplacement_bouton {
+      display: none;
+  }
+  .corps_filtre  {
+    height: 150px;
+    width: 100%;
+  }
+  .corps_filtre_bouton {
+    width: 170px;
+  }
+
+  /* Populaire */
+  .corps_texte {
+      margin-top: 30px;
+  }
+
+  .corps_article {
+      display: flex;
+      flex-direction: column-reverse;
+      margin: 0 ; 
+  }
+
+  .corps_populaire {
+      margin: auto;
+      padding: 10px 0 20px 0;
+      border-radius: 0;
+  }
+
+  .populaire_titre { 
+      margin-left: 30px;
+  }
+
+  .populaire_icône { 
+      margin-right: 30px
+  }
+
+  .populaire_bloc2 {
+      display: block;
+      width: 100%; 
+      height: 500px;
+  }
+
+  .populaire_boite {
+      width: auto; 
+      margin: 0 30px 10px 30px;  
+  }
+
+  .taille_titre, .taille_titre2 {
+      font-size: 16px;
+      font-weight: 700;
+      margin-left: 5%;
+      height: auto;
+  }
+
+  .taille_tarif {
+      font-size: 14px;
+      font-weight: 400;
+      margin-left: 5%;
+      height: auto;
+  }
+
+  .marge, .marge1, .marge2 {
+      margin-top: 65px;
+  }
+
+  /* Hébergement */
+  .corps_hébergement {
+      background-color: white;
+      margin: auto;
+  }
+
+  .hébergement_titre, .hébergement_lien {
+      margin-left: 30px;
+  }
+  
+  .hébergement_boite {
+      width: 100%;
+      box-shadow: 1px 3px 8px #e2e2e2;
+      margin-bottom: 15px;
+      margin: 0 30px 15px 30px;   
+  }
+
+  /* Activité */
+  .activité_bloc {
+      width: auto;  
+      flex-direction: row;
+      flex-wrap: wrap;
+  }
+
+  .activité_boite {
+      width: 100%;
+      height: 199px;   
+      margin-bottom: 25px;
+  }
+
+  .activité_boite_img { 
+      height: 143px;
+  }
+
+  .centrer, .centrer1 {
+      font-size: 16px;
+      margin-top: 15px;
+  }
+
+  /* Footer */
+  .footer {
+      margin: 60px 0 0 0;
+      width: 100%;
+      height: 500px;
+      display: block;
+  }
+
+  .footer_bloc {
+      width: 100%;
+      padding: 25px 0 0 30px;
+      height: 167px;
+  }
+
+  .footer_marge {
+      height: 135px;
+  }
+}
