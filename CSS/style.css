@@ -41,7 +41,6 @@ body {
   color: black;
   font-weight: 500;
   width: 150px;
-  right: 1%;
 }
 
 .navbar_link_text:hover {
@@ -60,7 +59,6 @@ body {
 .main_text_title {
   font-size: 22px;
   line-height: 26px;
-  margin-bottom: 0;
 }
 
 .main_text_subtitle {
@@ -125,7 +123,6 @@ body {
 /* Filters */
 .main_filters {
   display: flex;
-  justify-self: center;
   align-items: center;
   height: 50px;
   margin: 28px 30px 0 30px;
@@ -173,8 +170,7 @@ body {
 .main_filters_button:hover{
   background-color: #DEEBFF;
   cursor: pointer;
-  box-shadow: 1px 1px 0.2em;
-  transition: ease 0.6s;
+  box-shadow: 1px 1px 1px;
 }
 
 /* Info */
@@ -226,7 +222,7 @@ body {
   font-size: 22px;
   font-weight: 700;
   line-height: 26px;
-  margin: 45px 0 25px 4.2%; 
+  margin: 45px 0 25px 30px; 
 }
 
 .hébergement_block {
@@ -290,7 +286,7 @@ body {
   font-weight: 700;
   font-size: 18px;
   line-height: 21px;
-  margin-left: 4.2%;
+  margin-left: 35px;
 }
 
 /* Populaire */
@@ -305,7 +301,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 45px 9% 25px 9%;
+  margin: 45px 50px 25px ;
 }
 
 .populaire_title {
@@ -333,7 +329,6 @@ body {
 .populaire_box:hover {
   cursor: pointer;
   box-shadow: 1px 3px 8px 1px black;
-  transition: ease 0.3s;
 }
 
 .populaire_box_img {
@@ -393,7 +388,6 @@ body {
 .activity_box:hover {
   cursor: pointer;
   box-shadow: 1px 3px 8px 1px black;
-  transition: ease 0.3s;
 }
 
 .activity_box_img {
@@ -483,11 +477,11 @@ body {
   }
   
   .populaire_title {
-      margin-left: 4%;
+      margin-left: 50px;
   }
   
   .populaire_icon {
-      margin-right: 4%;
+      margin-right: 50px;
   }
   
   .populaire_box {
@@ -504,7 +498,7 @@ body {
   .taille_title, .taille_title2 {
       font-size: 14.5px;
       font-weight: 700;
-      margin-left: 5%;
+      margin-left: 5px;
   }
 
   .taille_title, .taille_tarif {
@@ -514,11 +508,12 @@ body {
   .taille_tarif {
       font-size: 13px;
       font-weight: 400;
-      margin-left: 5%;
+      margin-left: 5px;
   }
 
   .marge, .marge1, .marge2 {
-      margin: 20px 0 0 5%;
+      margin: 20px ;
+      margin-left: 5px;
   }
 
   /* Activity */
@@ -551,7 +546,7 @@ body {
   .activity_box_text {
       font-size: 16px;
       font-weight: 700;
-      margin: 15px 7%;
+      margin: 15px 7px;
   }
 
   .centrer1 {
@@ -692,19 +687,20 @@ body {
   .taille_title, .taille_title2 {
       font-size: 12px;
       font-weight: 700;
-      margin-left: 5%;
+      margin-left: 5px;
       height: auto;
   }
 
   .taille_tarif {
       font-size: 13px;
       font-weight: 400;
-      margin-left: 5%;
+      margin-left: 5px;
       height: auto;
   }
 
   .marge, .marge1, .marge2 {
       margin-top: 65px;
+      margin-left: 5px;
   }
 
   /* Hébergement */
