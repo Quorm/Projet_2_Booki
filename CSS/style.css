@@ -477,17 +477,16 @@ body {
   }
   
   .populaire_title {
-      margin-left: 50px;
+      margin-left: 30px;
   }
   
   .populaire_icon {
-      margin-right: 50px;
+      margin-right: 25px;
   }
   
   .populaire_box {
-      width: 28.5%;
       margin: 0;
-      width: 240px;
+      width: 220px;
       height: 144px;
   }
   
